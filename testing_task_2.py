@@ -4,6 +4,7 @@ import csv
 import sys
 import random
 
+
 taskfile = open('task2.txt', 'r')
 tasks = csv.reader(taskfile, delimiter=' ')
 testing = []
