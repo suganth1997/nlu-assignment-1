@@ -6,6 +6,7 @@ import csv
 import scipy.stats
 import sys
 
+
 def calc_valid_prob(filename):
     file = open(filename, 'rb')
     data = pickle.load(file)
