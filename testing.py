@@ -4,6 +4,7 @@ import pickle
 import os
 import csv
 import scipy.stats
+import sys
 
 def calc_valid_prob(filename):
     file = open(filename, 'rb')
@@ -50,7 +51,7 @@ def calc_simlex_rating(dataset, embedding_pickle):
         
     return list(scipy.stats.spearmanr(cosine_sim,simlex_rating))[0]
 
-direc = 'embedding_pickle/'
+direc = sys.argv[1]
 simlex_direc = 'simlex.txt'
 for filename in os.listdir(direc):
     if filename.endswith('.dat'):
