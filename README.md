@@ -29,3 +29,8 @@ Command line argument should be the directory to the model embedding that should
 ```bash
 python testing_task_2.py [directory_to_pickled_model]
 ```
+# Overview of the repository
+* pickled_embeddings has all the models </br>
+* correlation_scores contains the calculated spearman correlation scores and likelihood probability of validation </br>
+* simlex.txt is for the simlex-999 task </br>
+* task2.txt is for the analogy task </br>
