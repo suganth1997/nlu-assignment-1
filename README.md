@@ -17,10 +17,15 @@ python negative_batches.py [word_window_size] [embedding_size] [number_of_epochs
 For getting the simlex rating use *testing.py* </br>
 Command line argument should be the directory where all the models are pickled *in our case pickled_embeddings* </br>
 ```bash
-python testing.py [directory_to_pickled_models]
+python testing_task_1.py [directory_to_pickled_models]
 ```
 To get plots of the results of task 1 use the *plot_results.py* </br>
 The script will make use of the result file *correlations.csv*
 ```bash
 python plot_results.py
+```
+For getting the accuracy for analogy task use *testing_task_2.py* </br>
+Command line argument should be the directory to the model embedding that should be tested *will be inside pickled embeddings* </br>
+```bash
+python testing_task_2.py [directory_to_pickled_model]
 ```
